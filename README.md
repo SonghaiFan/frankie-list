@@ -2,9 +2,11 @@
 
 # Frank's Life List
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 Keep the things you want to do, experience and finish in a list, with a lightweight way to compare it with someone else.
 
-[Guide (中文)](docs/guide.md) · [Run locally](#run-locally) · [中文](README.zh-CN.md)
+[Guide (中文)](docs/guide.md) · [Run locally](#run-locally)
 
 ## What it does
 
