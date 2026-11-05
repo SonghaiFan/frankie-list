@@ -1,0 +1,14 @@
+{
+  "repository": "frankie-list",
+  "source_commit": "f47ea41569829115d3086fc4abb0ee6cf1e13071",
+  "captured_on": "2026-11-05",
+  "source_state": "Current local working tree; existing uncommitted app edits were included where present.",
+  "materials": [
+    {
+      "file": "assets/ui.png",
+      "kind": "current local app screenshot",
+      "note": "Current default 100 Life List notebook from a fresh local origin.",
+      "captured_on": "2026-11-05"
+    }
+  ]
+}

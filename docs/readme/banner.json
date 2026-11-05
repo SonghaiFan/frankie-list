@@ -1,0 +1,31 @@
+{
+  "title": "Life List",
+  "tagline": "Keep the things you want to do.",
+  "category": "Life / Lists and sharing",
+  "layout": "screenshot",
+  "assets": [
+    {
+      "src": "assets/ui.png",
+      "fit": "contain",
+      "crop": [
+        224,
+        98,
+        1101,
+        734
+      ],
+      "source_size": [
+        1720,
+        1223
+      ]
+    }
+  ],
+  "signature": "assets/frankie.svg",
+  "provenance": [
+    {
+      "file": "assets/ui.png",
+      "kind": "current local app screenshot",
+      "note": "Current default 100 Life List notebook from a fresh local origin.",
+      "captured_on": "2026-11-05"
+    }
+  ]
+}
