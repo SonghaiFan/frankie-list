@@ -2,15 +2,15 @@
 
 # Frank's Life List
 
-把想做、想经历、想完成的事情放进清单，也留一个轻量的方式与别人对齐。
+Keep the things you want to do, experience and finish in a list, with a lightweight way to compare it with someone else.
 
-[Guide](docs/guide.md) · [Run locally](#run-locally)
+[Guide (中文)](docs/guide.md) · [Run locally](#run-locally) · [中文](README.zh-CN.md)
 
 ## What it does
 
-- 用分组和分页整理清单，逐项记录完成状态。
-- 通过链接或二维码分享，异步比较彼此的进度。
-- 无需注册，打开后就能继续自己的列表。
+- Organize lists into groups and pages, tracking completion item by item.
+- Share through a link or QR code and compare progress asynchronously.
+- Continue your lists without registering an account.
 
 ## Run locally
 
@@ -19,11 +19,11 @@ npm ci
 npm run dev
 ```
 
-打开 Vite 输出的地址。列表功能不需要 AI API key。
+Open the URL printed by Vite. List features do not require an AI API key.
 
 ## Before you start
 
-列表状态保存在当前浏览器；不同地址和设备不会自动共享同一份状态。分享与对比通过应用提供的链接或二维码进行。
+List state stays in this browser; different origins and devices do not automatically share it. Use the app’s links or QR codes to share and compare lists.
 
 ## For developers
 
@@ -32,7 +32,7 @@ npm run lint
 npm run build
 ```
 
-[Project guide](docs/guide.md) · [Artwork](docs/readme/README.md)
+[Project guide (中文)](docs/guide.md) · [Artwork](docs/readme/README.md)
 
 ---
 
