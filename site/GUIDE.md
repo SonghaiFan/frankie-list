@@ -1,46 +1,45 @@
-# Introduction page maintenance / 介绍页维护
+# List introduction maintenance / 介绍页维护
 
-[English README](../README.md) · [中文 README](../README.zh-CN.md)
+The introduction is separate from the application. English is at `/`, Chinese at `/zh/`. It builds with Python's standard library and never reads environment files. / 介绍页与应用独立，英文默认、中文位于 `/zh/`；仅需 Python 标准库，不读取环境文件。
 
-## Two destinations / 两个入口
+## Content and code / 内容与代码
 
-- Introduction / 介绍页: https://songhaifan.github.io/frankie-list/
-- App / 应用: https://frankie-list-songhaifans-projects.vercel.app
-- The introduction is a standalone static site. It never builds the app or reads environment files. / 介绍页独立构建，不构建应用，也不读取环境变量文件。
-- English is the default; `zh/` is the Chinese version. / 英文默认，中文位于 `zh/`。
+- `site/content.json`: both languages, concrete workflow, storage and snapshot-sharing explanation. Update them together. / 同步维护双语文案、实际流程与存储分享说明。
+- `site/build.py`: layout, gallery filenames, source sample validation, SEO metadata and existing banner copy. / 页面结构、图片清单、示例来源检查与分享元信息。
+- `site/demo.js`: unsaved adaptation of `getComparisonBuckets` in `src/lib/app-selectors.ts`. If those four conditions change, update both and check every bucket. It is an explanation, not the full React workspace. / 四类对比规则的无保存演示，源规则变化后同步更新并检查四种结果。
+- `site/style.css`: actual #002fa7 blue, gray shell and ruled-paper surfaces from `src/index.css`. Preserve readable focus states and mobile layout. / 继承真实应用的蓝色、灰色外壳与纸张视觉，保持键盘焦点和移动端布局。
+- Example items are validated against `DEFAULT_ITEMS` in `src/lib/workspace-constants.ts`. English sample labels are explanatory translations. / 示例核对内置条目，英文为介绍用译文。
 
-## Files to update / 更新哪些文件
+## Replace these assets / 替换哪些素材
 
-| Source / 来源 | What it shows / 内容 |
+| File | Replace when / 何时替换 |
 | --- | --- |
-| `docs/readme/assets/ui.png` | Current product interface and original assets. |
+| `site/assets/gallery-current.png` | Gallery or notebook creation changes / 总览或新建入口变化 |
+| `site/assets/stack-current.png` | Cover, stack or navigation changes / 封面、堆叠或翻页变化 |
+| `site/assets/marked-current.png` | Page layout, checkbox or completion marker changes; also used as hero / 内页、勾选或高亮变化，同时用于首屏 |
+| `site/assets/compare-current.png` | Review/comparison layout or result labels change / 对比界面或结果分类变化 |
+| `docs/readme/banner.png` | Approved banner changes; used as Open Graph image / 已确认 banner 更新时同步 |
+| `docs/readme/assets/frankie.svg` | Approved family signature changes / 系列签名更新 |
 
-- `../README.md` and `../README.zh-CN.md`: product introduction, features, setup, limitations and developer commands. Update both languages together. / 同步维护双语介绍、功能、运行步骤与限制。
-- `project.json`: app URL, repository, category, colors, three user steps and the ordered media list. / 应用链接、仓库、分类、颜色、使用步骤与有序素材列表。
-- `style.css`: this app's visual treatment within the shared layout. / 统一结构下的项目视觉风格。
-- `build.py`: portable standard-library renderer. / 可独立使用的 Python 标准库构建器。
+## Capture actual UI / 采集真实界面
 
-## Replacing screenshots and GIFs / 替换截图和动图
+Run `npm ci` then `npm run dev -- --port 8336 --host 127.0.0.1`. Use a new local origin so existing personal notebooks stay untouched. Use bundled defaults or clearly labelled demo data, never personal records. Wait for fonts and card transitions to settle before capture. / 使用新的本地域名端口，避免修改已有个人清单；只用内置数据或明确的演示数据，等待字体和翻页动画稳定。
 
-1. Run the current app and capture real, settled UI. Use synthetic or guest data; hide credentials and private content. For GIFs, record a real interaction from start to finish, rather than animating a static screenshot. / 运行当前版本，使用访客或示例数据采集稳定画面；GIF 应录制真实操作，不把静态图伪装成操作录像。
-2. Replace the corresponding source file above when its screen changes. These banner assets are shared with the README; replacing them may update both the banner and this page. Keep `docs/readme/source-version.json` and banner provenance accurate. / 界面变化后替换对应文件；共享素材会同时影响 banner，需同步更新来源记录。
-3. For a new screen or GIF, add it under `site/assets/` and add an entry to `project.json` → `media` with `src`, bilingual `caption`, and optionally `captured_on` / `source_revision`. The first item is the hero; the full list is the gallery. Use a GIF's first frame as an informative resting frame, keep files small, and provide a still alternative. / 新素材放到 `site/assets/`，登记双语说明、采集时间和版本；第一项为主图，其余进入画廊。GIF 应有可读首帧并保留静态替代图。
-4. If app behavior changes, update both READMEs and both `steps` arrays. Native screenshots and shared family artwork must be labelled honestly. / 行为变化时同步更新双语 README 和使用步骤；区分原生截图与系列共享素材。
-5. Build and inspect desktop and mobile, in both languages. Check the app link and every image. / 构建后检查桌面、手机和两种语言，验证链接与所有图片。
+1. Capture the default gallery. Open stack view and capture the cover. / 采集总览，打开堆叠视图采集封面。
+2. Move to the first page and tick two bundled items. Capture the marker/checkbox treatment. These are staged examples, not a user's history. / 第一页勾选两个内置条目，注明为示例记录。
+3. Generate a snapshot from bundled data, open it locally, review your answers, then use Compare this group. Capture the four result groups. Do not include full share-key URLs in documentation or screenshots. / 本地打开内置数据快照，填写自己的答案再对比，不公开完整分享参数。
+4. Update both captions in `content.json`, then rebuild. The hero crops a real capture in CSS; adjust its crop if the app layout changes. / 同步双语图片说明并重新构建，界面尺寸改变时调整首屏 CSS 裁切。
+
+Sharing semantics are owned by `src/lib/app-state-storage.ts` and `src/lib/notebook-utils.ts`; local IDs and encryption keys are in those files too. Recheck the privacy explanation if persistence, URL encoding or import changes. / 若本地存档、链接编码或导入方式变化，重新核对这些源码与隐私说明。
+
+## Build and check / 构建与检查
 
 ```sh
-python3 site/build.py
-python3 -m http.server 8080 --directory _site --bind 127.0.0.1
+python3 site/build.py --out /tmp/list-intro-preview
+python3 -m http.server 8320 --bind 127.0.0.1 --directory /tmp
+node --check site/demo.js
 ```
 
-Open http://127.0.0.1:8080/ and http://127.0.0.1:8080/zh/.
+Open `http://127.0.0.1:8320/list-intro-preview/` and `.../zh/`. Check desktop and 390px phone width, all image loads, language links, sample checkbox changes/reset, and `#use`/`#start`. No app server or model API is needed for the introduction. / 检查双语、桌面与手机宽度、图片、语言链接、示例四类状态与重置、锚点；介绍页不需要应用服务器或 AI API。
 
-## Publishing / 发布
-
-Push the reviewed page changes to `main`. `.github/workflows/pages.yml` publishes only `_site/` to GitHub Pages. App deployment remains separate on Vercel for browser apps; API services and native/local apps retain their own runtime. Never include `.env` files or unrelated work in a page commit. / 推送审核后的页面改动到 `main`，工作流只发布 `_site/`；应用与 API 的部署分别管理，勿提交环境变量文件或其他未完成代码。
-
-If the branch or repository owner changes, update `project.json`, the workflow branch and README introduction links. / 分支或仓库所有者变化时，同步修改配置、工作流与介绍页链接。
-
-## App signature / 应用签名
-
-The app signature uses `public/frankie-signature.svg`, copied from the approved `docs/readme/assets/frankie.svg`. It links to this introduction page. / 应用签名使用已确认的系列 SVG，并链接到介绍页。
+The existing `.github/workflows/pages.yml` publishes `_site` on `main` after relevant changes. Commit only reviewed task files. The notebook data and app behavior are outside an intro-only update. / 现有工作流发布 `_site`，仅提交审核后的本次文件。

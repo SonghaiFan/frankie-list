@@ -1,0 +1,166 @@
+{
+  "en": {
+    "headline": "Life lists, on paper.\nShare a snapshot.",
+    "intro": "Collect experiences and everyday tasks in notebooks, mark them off, and compare a shared list with someone else.",
+    "open": "Open List",
+    "nav": [
+      "The notebook",
+      "How to use it",
+      "Screens",
+      "Storage & sharing"
+    ],
+    "concept_title": "A notebook for each kind of list.",
+    "concept": "Start with the bundled 100 Life List, or make a notebook for travel, shopping or the things you want to try. Each notebook keeps its own items and completion marks.",
+    "features": [
+      [
+        "Turn a list into pages",
+        "Desktop notebooks have a cover, ruled pages and a back cover. Each content page holds ten items. Open the stack to move through them; mobile uses a compact list."
+      ],
+      [
+        "Mark an experience",
+        "Tap the punched-hole checkbox. A yellow marker stroke keeps completed items readable. When all ten items on a full page are checked, that page moves to the completed stack."
+      ],
+      [
+        "Make room for your own items",
+        "Add or remove items inside a notebook and add blank pages. The gallery keeps separate notebooks together, so a grocery list does not have to share a page with life goals."
+      ]
+    ],
+    "compare_title": "Compare two sets of marks.",
+    "compare_intro": "A shared link contains one notebook and the sender’s marks at the time it was made. Open it, review your own answers, then choose Compare this group.",
+    "demo_note": "A small unsaved example using the app’s four comparison rules. These sample items come from the bundled list; English labels are explanatory translations.",
+    "me": "Me",
+    "them": "Shared snapshot",
+    "demo_items": [
+      "Take a walk alone",
+      "Travel with friends",
+      "Learn a language",
+      "Give yourself a gift"
+    ],
+    "buckets": [
+      "Both done",
+      "Only I did",
+      "Only they did",
+      "Neither done"
+    ],
+    "reset": "Reset example",
+    "snapshot_title": "A link carries a copy, not a live room.",
+    "snapshot_body": "The app compresses the selected notebook and its completion marks into the link’s query string. The QR code contains the same link. Later changes do not update a link you already sent; create a new one to compare again.",
+    "workflow_title": "Your first notebook",
+    "steps": [
+      [
+        "Open a notebook",
+        "Choose the default list, or use New Notebook to create a separate group. Open its stack and move past the cover."
+      ],
+      [
+        "Add and check items",
+        "Keep the list personal. Add a task or experience, then tap its checkbox when you have done it."
+      ],
+      [
+        "Share the selected notebook",
+        "Use Share Link or QR Code. Review what the notebook contains before passing the link to someone."
+      ],
+      [
+        "Compare your own answers",
+        "The recipient opens the snapshot, checks their own items, then selects Compare this group to see the four result groups."
+      ]
+    ],
+    "gallery_title": "Inside the real app",
+    "captions": [
+      "Default notebook gallery, using bundled data.",
+      "The real notebook stack and cover.",
+      "A page with two demonstration completion marks.",
+      "The real comparison view, with clearly staged bundled-data answers."
+    ],
+    "storage_title": "No account. Local records.",
+    "storage": "Notebooks, marks and page state are kept in this browser’s local storage. No account or remote list database is needed for the current workspace. Another browser or app address has a separate copy; clearing site data can remove your records.",
+    "security": "The local archive uses encryption, but its key is derived from an identifier stored in the same browser. It is not a password vault. Shared links use compression, not encryption: anyone with a link can read the included notebook and marks. Avoid putting private material in a link.",
+    "run": "Run locally",
+    "run_note": "The ordinary notebook and comparison flows do not need an AI key or account. Use the URL printed by Vite. A saved link is a snapshot, not a complete automatic backup of every notebook.",
+    "guide": "Screenshot & content maintenance guide",
+    "source": "Source code",
+    "footer": "A Frankie project by Songhai Fan",
+    "skip": "Skip to content"
+  },
+  "zh": {
+    "headline": "把清单装订成册，\n分享完成的记录。",
+    "intro": "用笔记本收纳人生体验与日常任务，逐项标记，再与另一个人的同一份清单比较。",
+    "open": "打开 List",
+    "nav": [
+      "笔记本",
+      "使用方式",
+      "真实界面",
+      "存储与分享"
+    ],
+    "concept_title": "不同的清单，各有一本。",
+    "concept": "从内置的「100 Life List」开始，也可以为旅行、购物或想尝试的事新建笔记本。每一本都有自己的条目与完成记录。",
+    "features": [
+      [
+        "让清单变成书页",
+        "桌面端有封面、横线内页与封底，每张内页容纳十项。打开卡片堆即可逐页浏览；手机端则使用紧凑的列表。"
+      ],
+      [
+        "标记一次体验",
+        "轻点打孔式复选框，黄色荧光笔会划过已完成的文字，内容仍然可读。完整一页的十项全部勾选后，会移入已完成的卡片堆。"
+      ],
+      [
+        "加入自己的条目",
+        "在笔记本中添加、移除条目，也能增加空白页。总览收纳多本笔记本，购物清单不必和人生目标挤在同一页。"
+      ]
+    ],
+    "compare_title": "看看两个人分别完成了什么。",
+    "compare_intro": "分享链接包含生成时那一本笔记本及发送者的勾选记录。打开后先查看并填写自己的答案，再点击「对比这一组」。",
+    "demo_note": "这是采用应用四类对比规则的小型示例，不会保存。条目取自内置清单。",
+    "me": "我",
+    "them": "分享快照",
+    "demo_items": [
+      "一个人散步",
+      "跟朋友旅游",
+      "学一种语言",
+      "给自己买礼物"
+    ],
+    "buckets": [
+      "双方都完成",
+      "只有我完成",
+      "只有对方完成",
+      "双方都未完成"
+    ],
+    "reset": "重置示例",
+    "snapshot_title": "分享的是副本，不是实时房间。",
+    "snapshot_body": "应用把所选笔记本与完成记录压缩到链接的查询参数里，二维码包含同一条链接。之后的修改不会自动更新已发送的链接；想再次对齐，就生成新的链接。",
+    "workflow_title": "第一本清单，从这里开始",
+    "steps": [
+      [
+        "打开一本笔记本",
+        "选择内置清单，或点 New Notebook 新建分组。打开卡片堆，翻过封面。"
+      ],
+      [
+        "添加与勾选",
+        "把想做、想经历的事写进去，完成后点击复选框。"
+      ],
+      [
+        "分享当前这一本",
+        "使用 Share Link 或 QR Code。发送前先检查这本笔记本的内容。"
+      ],
+      [
+        "填写自己的答案再比较",
+        "接收者打开快照，勾选自己的条目，再点「对比这一组」，查看四类结果。"
+      ]
+    ],
+    "gallery_title": "真实应用里的样子",
+    "captions": [
+      "使用内置数据的默认笔记本总览。",
+      "真实的笔记本卡片堆与封面。",
+      "使用两个演示勾选记录的内页。",
+      "使用内置数据与明确安排的示例答案，展示真实对比界面。"
+    ],
+    "storage_title": "无需账号，记录留在本地。",
+    "storage": "笔记本、勾选与书页状态保存在当前浏览器的本地存储里。现有清单流程不需要账号或远程清单数据库。换一个浏览器或应用地址，就是另一份数据；清理站点数据可能移除记录。",
+    "security": "本地存档采用加密，但密钥由同一浏览器里保存的标识生成，因此它不是密码保险箱。分享链接使用压缩而非加密，拿到链接的人可以读取其中的笔记本与勾选。不要把私密内容放进分享链接。",
+    "run": "本地运行",
+    "run_note": "日常笔记本和对比不需要 AI key 或账号，打开 Vite 输出的地址即可。分享链接只是一份快照，不会自动完整备份所有笔记本。",
+    "guide": "截图与内容维护指南",
+    "source": "源代码",
+    "footer": "Songhai Fan 的 Frankie 系列项目",
+    "skip": "跳至内容"
+  }
+}
