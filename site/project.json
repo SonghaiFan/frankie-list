@@ -3,7 +3,7 @@
   "branch": "main",
   "pages_url": "https://songhaifan.github.io/frankie-list/",
   "kind": "online",
-  "app_url": "https://frankie-list.vercel.app",
+  "app_url": "https://frankie-list-songhaifans-projects.vercel.app",
   "vercel_project": "frankie-list",
   "accent": "#b65739",
   "tint": "#faf5ef",

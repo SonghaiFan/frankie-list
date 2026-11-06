@@ -5,7 +5,7 @@
 ## Two destinations / 两个入口
 
 - Introduction / 介绍页: https://songhaifan.github.io/frankie-list/
-- App / 应用: https://frankie-list.vercel.app
+- App / 应用: https://frankie-list-songhaifans-projects.vercel.app
 - The introduction is a standalone static site. It never builds the app or reads environment files. / 介绍页独立构建，不构建应用，也不读取环境变量文件。
 - English is the default; `zh/` is the Chinese version. / 英文默认，中文位于 `zh/`。
 
