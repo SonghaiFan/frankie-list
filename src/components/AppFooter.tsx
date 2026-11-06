@@ -60,6 +60,7 @@ export function AppFooter({
           </span>
         </div>
       )}
+      <div style={{ marginTop: 16, opacity: 0.6 }}><a href="https://songhaifan.github.io/frankie-list/" aria-label="About Frankie list" style={{ display: "inline-flex", alignItems: "center", padding: "6px", color: "inherit",  }}><span aria-hidden="true" style={{ display: "block", width: 76, height: 26, backgroundColor: "currentColor", mask: "url(/frankie-signature.svg) center / contain no-repeat", WebkitMask: "url(/frankie-signature.svg) center / contain no-repeat" }} /></a></div>
       <div className="ui-mono mt-6 opacity-20">{signature}</div>
     </footer>
   );
