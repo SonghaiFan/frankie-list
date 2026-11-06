@@ -6,7 +6,7 @@
 
 Keep the things you want to do, experience and finish in a list, with a lightweight way to compare it with someone else.
 
-[Guide (中文)](docs/guide.md) · [Run locally](#run-locally)
+[Introduction](https://songhaifan.github.io/frankie-list/) · [Guide (中文)](docs/guide.md) · [Run locally](#run-locally)
 
 ## What it does
 

@@ -6,7 +6,7 @@
 
 把想做、想经历、想完成的事情放进清单，也留一个轻量的方式与别人对齐。
 
-[项目指南](docs/guide.md) · [本地运行](#本地运行)
+[介绍页](https://songhaifan.github.io/frankie-list/zh/) · [项目指南](docs/guide.md) · [本地运行](#本地运行)
 
 ## 可以做什么
 

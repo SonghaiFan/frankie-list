@@ -1,0 +1,49 @@
+{
+  "repository": "SonghaiFan/frankie-list",
+  "branch": "main",
+  "pages_url": "https://songhaifan.github.io/frankie-list/",
+  "kind": "online",
+  "app_url": "https://frankie-list.vercel.app",
+  "vercel_project": "frankie-list",
+  "accent": "#b65739",
+  "tint": "#faf5ef",
+  "category": {
+    "en": "Life / Experiences",
+    "zh": "生活 / 体验"
+  },
+  "steps": {
+    "en": [
+      "Choose a list or group.",
+      "Mark experiences as you complete them.",
+      "Share a link or QR code to compare with someone else."
+    ],
+    "zh": [
+      "选择一个清单或分组。",
+      "完成体验后逐项标记。",
+      "分享链接或二维码，与他人比较。"
+    ]
+  },
+  "media": [
+    {
+      "src": "docs/readme/assets/ui.png",
+      "caption": {
+        "en": "Current product interface and original assets.",
+        "zh": "项目真实界面或原始素材。"
+      },
+      "crop": [
+        224,
+        98,
+        1101,
+        734
+      ],
+      "source_size": [
+        1720,
+        1223
+      ]
+    }
+  ],
+  "art_note": {
+    "en": "Current product interface and original assets.",
+    "zh": "素材来自项目当前界面与原始资源。"
+  }
+}
